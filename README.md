@@ -14,7 +14,6 @@ In Windows? I don't know. Maybe it same but, I don't really trust Windows when i
 Instruction:
 -
 - Install the package
-- 
 - Run the project, "python (file_name).py" or "python3 (file_name).py"
 - Copy some Tripadvisor Hotel link and paste to the app. (*example: https://www.tripadvisor.com/Hotel_Review-g14782503-d3737584-Reviews-Hotel_Tentrem_Yogyakarta-Yogyakarta_Yogyakarta_Region_Java.html)
 - Type the name of csv that will export to the same folder as the app
