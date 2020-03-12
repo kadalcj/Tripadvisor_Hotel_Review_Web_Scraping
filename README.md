@@ -22,4 +22,4 @@ Instruction:
 - Yeah that's all.
 
 
-I dont think my code was eficient or somehitng.
+I dont think my code was efficient or somehitng.
