@@ -23,3 +23,4 @@ Instruction:
 
 
 I dont think my code was efficient or somehitng.
+I just doing something that "It just work".
