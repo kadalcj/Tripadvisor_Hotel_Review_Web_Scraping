@@ -8,7 +8,7 @@ from bs4 import BeautifulSoup
 import sys
 
 # Simple GUI
-print('Which hotel shall we scrape today?')
+print('Which hotel shall we scrape today? (url please)')
 uri = input('>>> ')
 print()
 
@@ -63,14 +63,12 @@ if(soup.find('div', {'class': 'hotels-hotel-review-about-noreviews-NoReviewsCTA_
 # Get the max page number
 if(soup.find_all('a', {'class': 'pageNum cx_brand_refresh_phase2'}) != []):
     res = soup.find_all('a', {'class': 'pageNum cx_brand_refresh_phase2'})
-    print(res)
 
     maxPage = int(res[-1].text)
 
 elif(soup.find_all('a', {'class': 'pageNum cx_brand_refresh_phase2'}) == []):
     if(soup.find('a', {'class': 'pageNum cx_brand_refresh_phase2'}) != None):
         res = soup.find('a', {'class': 'pageNum cx_brand_refresh_phase2'})
-        print(res)
 
         maxPage = int(res.text)
     else:
@@ -223,14 +221,12 @@ elif('.co.id' in uri):
     # Get the max page number
     if(soup.find_all('a', {'class': 'pageNum cx_brand_refresh_phase2'}) != []):
         res = soup.find_all('a', {'class': 'pageNum cx_brand_refresh_phase2'})
-        print(res)
 
         maxPage = int(res[-1].text)
 
     elif(soup.find_all('a', {'class': 'pageNum cx_brand_refresh_phase2'}) == []):
         if(soup.find('a', {'class': 'pageNum cx_brand_refresh_phase2'}) != None):
             res = soup.find('a', {'class': 'pageNum cx_brand_refresh_phase2'})
-            print(res)
 
             maxPage = int(res.text)
         else:
